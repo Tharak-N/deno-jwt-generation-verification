@@ -1,8 +1,15 @@
-export function add(a: number, b: number): number {
-  return a + b;
-}
+import { Application, oakCors } from './imports.ts';
+import route from './routes.ts';
 
-// Learn more at https://deno.land/manual/examples/module_metadata#concepts
-if (import.meta.main) {
-  console.log("Add 2 + 3 =", add(2, 3));
-}
+const app = new Application();
+
+// console.log("the routes are", route)
+app.use(oakCors())
+app.use(route.routes())
+app.use(route.allowedMethods())
+
+
+await app.listen({port: 8800})
+
+
+

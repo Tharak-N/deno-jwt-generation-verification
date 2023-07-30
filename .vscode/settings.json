@@ -1,0 +1,14 @@
+{
+    "deno.enable": true,
+    // "deno.suggest.imports.hosts": {
+
+    //   "https://deno.land": true
+    // },
+    // "deno.suggest.completeFunctionCalls": true,
+    // "deno.inlayHints.variableTypes.enabled": true,
+    // "deno.inlayHints.propertyDeclarationTypes.enabled": true,
+    // "deno.inlayHints.parameterTypes.enabled": true,
+    // "deno.inlayHints.parameterNames.enabled": "all",
+    // "deno.inlayHints.functionLikeReturnTypes.enabled": true,
+    // "deno.path": "/snap/bin/deno",
+  }
