@@ -5,8 +5,6 @@ import authenticate from  './Controllers/Authentication.ts';
 import about from './Controllers/About.ts';
 
 const router = new Router()
-// console.log("The router instance is", router)
-
 router.get(
     '/',
     async (ctx: Context)  => {
@@ -27,7 +25,4 @@ router.get(
         await authenticate.login<Context>(ctx)
     }
 )
-
-
-// console.log("the routes are", router)
 export default router

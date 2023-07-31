@@ -16,7 +16,7 @@ class AboutMe {
     }
     
     async responseHandlerFn<T>(context: T){
-        context.response.body = JSON.stringify("Hello Tharak")
+        context.response.body = JSON.stringify("Hello World")
     }
 }
 
