@@ -4,10 +4,14 @@ import route from './routes.ts';
 const app = new Application();
 
 // console.log("the routes are", route)
-app.use(oakCors())
-app.use(route.routes())
-app.use(route.allowedMethods())
+// console.log("the puter routes are", route.routes())
+app.use(
+    oakCors(),
+    route.routes(),
+    route.allowedMethods()
+)
 
+// console.log("the app file", app)
 
 await app.listen({port: 8800})
 

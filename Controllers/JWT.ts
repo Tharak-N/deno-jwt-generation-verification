@@ -32,7 +32,8 @@ class JwtToken {
         return this.JWT
     }
 
-    async isAuthorized(_jwt: any): boolean {
+
+    async isAuthorized(_jwt: any):boolean {
         try {
             const { header, payload } = await jwtVerify(_jwt, this.JWK)
             console.log("header and payload from verified JWT are", header, payload)
