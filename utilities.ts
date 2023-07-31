@@ -8,7 +8,7 @@ export async function HomeRoute(ctx: Context) {
 
 export async function AboutMe(ctx: Context) {
     const {request, response} = await ctx;
-    response.body = "Tharak from Bangalore"
+    response.body = "Tharak"
 }
 
 
