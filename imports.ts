@@ -2,7 +2,8 @@ export {
     Application,
     Router,
     Context,
-    type RouterContext
+    type RouterContext,
+    type Next
 } from 'https://deno.land/x/oak/mod.ts';
 
 export {

@@ -1,4 +1,4 @@
-import { Context } from './imports.ts';
+import { Context, Next } from './imports.ts';
 
 // const HomeRoute = [
 //     async (ctx: Context) => {
@@ -6,3 +6,12 @@ import { Context } from './imports.ts';
 //     }
 // ]
 // export { HomeRoute }
+
+
+
+export function handleAuth() {
+    let _ = async (context: Context, next: Next) => {
+        await next()
+    }
+    return _
+}
