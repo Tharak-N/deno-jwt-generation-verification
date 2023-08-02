@@ -1,4 +1,5 @@
 import authorization from './Authorization.ts';
+import { userDetails } from '../mongose.ts';
 
 class AboutMe {
 
@@ -16,6 +17,7 @@ class AboutMe {
     }
     
     async responseHandlerFn<T>(context: T){
+        console.log("data from mongo is", userDetails)
         context.response.body = JSON.stringify("Hello World")
     }
 }

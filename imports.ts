@@ -14,4 +14,9 @@ export {
 
 export { oakCors } from "https://deno.land/x/cors/mod.ts";
 
+export { 
+    Bson,
+    MongoClient
+} from 'https://deno.land/x/mongo/mod.ts'
+
 
